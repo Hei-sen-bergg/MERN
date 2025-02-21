@@ -18,7 +18,9 @@ app.use(cookieParser());
 app.use(cors({
   origin: 'https://mern-liard-zeta.vercel.app/',  
   credentials: true,
-  
+  allowedHeaders: ['Content-Type', 'Authorization', 'x-access-token'],
+
+
 }));
 
 app.use("/users", userRoutes);

@@ -56,6 +56,7 @@ const logIn = async (req, res, next) => {
     httpOnly: true,
     secure: true,                   //enable in production
     sameSite: "none",
+    
    
   });
    res.status(200).json({
