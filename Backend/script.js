@@ -16,7 +16,7 @@ const PORT = 5000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: 'https://mern-liard-zeta.vercel.app',  
+  origin: ['https://mern-liard-zeta.vercel.app', "https://master.d3emj4v60yqgrv.amplifyapp.com"],  
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization', 'x-access-token'],
 
